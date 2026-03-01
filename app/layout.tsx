@@ -1,1 +1,16 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta name="description" content="A description of the app">\n    <meta name="author" content="Adityoexs">\n    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">\n    <title>App Layout</title>\n</head>\n<body class="bg-gray-100">\n    <div class="container mx-auto px-4">\n        <header class="py-5">\n            <h1 class="text-3xl font-bold text-center">My App</h1>\n        </header>\n        <main>\n            <!-- Main content goes here -->\n        </main>\n        <footer class="py-5 text-center">\n            <p>&copy; 2026 Adityoexs. All rights reserved.</p>\n        </footer>\n    </div>\n</body>\n</html>\n
+// app/layout.tsx
+
+import './globals.css';
+
+export const metadata = {
+  title: 'Workspace Designer',
+  description: 'Design your ideal workspace with our designer tool!'
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
